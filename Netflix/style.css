@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.main {
+    background-image: url(assets/img/bg.png);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    /*Keeps the image in center during re-sizing*/
+    background-size: max(1200px, 100vw);
+    /*This makes the background image have the zoom effect*/
+    background-repeat: no-repeat;
+
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.64;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    /*Makes sure that the nav barncluded will also have the intended opacity*/
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+    height: 60px;
+    padding: 21px 0;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    padding: 15px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.text {
+    height: calc(100% - 103px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    position: relative;
+         
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.text .text1 {
+    font-size: 44px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.text .text2 {
+    font-size: 22px;
+    font-weight: 350;
+    text-align: center;
+}
+
+.text .text3 {
+    font-size: 17px;
+    font-weight: 350;
+    line-height: 30px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(49, 49, 49);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+}
+
+.btn-lang {
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 0.01px solid rgb(246, 238, 238, 0.6);
+    padding: 6px 30px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-red-sg {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    padding: 7px 15px;
+    font-weight: 600;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    border: 0;
+    padding: 10px 27px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.text input {
+    font-size: 15px;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 35px 12px 11px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 0.01px solid rgb(246, 238, 238, 0.6);
+}
+
+.text-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.content-img {
+    position: relative;
+}
+
+.content-img img {
+    position: relative;
+    width: 555px;
+    z-index: 10;
+    top: 10px;
+    padding: 0 0 25px 0;
+}
+
+.content-img video {
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    right: 0px;
+    height: 256px;
+    width: 413px;
+}
+
+.content-text{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+.first .content-text1 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    padding: 0 0 20px 0;
+}
+
+.first .content-text2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.second-content-img img,
+.fourth-content-img img {
+    width: 40vw;
+    padding: 0 0 25px 0;
+}
+
+.third-content-img {
+    position: relative;
+}
+
+.third-content-img img {
+    position: relative;
+    width: 40vw;
+    z-index: 10;
+    top: 10px;
+    padding: 0 0 25px 0;
+}
+
+.third-content-img video {
+    position: absolute;
+    top: 41px;
+    left: 83px;
+    right: 0px;
+    height: 185px;
+}
+
+.faq h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+    font-family: "DM Sans", sans-serif;
+    padding:20px 0;
+}
+
+.faq-box:hover{
+    background-color:#414141;
+}
+
+.faq-box {
+    transition: all 1s ease-out;
+    display: flex;
+    background-color: rgb(46, 45, 45);
+    padding: 23px;
+    color: white;
+    justify-content: space-between;
+    max-width: 69vw;
+    align-items: center;
+    cursor: pointer;
+    margin: 7px auto;
+}
+
+.faq-box span{
+    font-family: "DM Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.second-email{
+    color: white;
+    padding:40px 0;
+}
+
+.second-email .context{
+    text-align: center;
+    padding: 15px 0;
+}
+
+.second-email input {
+    font-size: 15px;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 35px 12px 11px;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 0.01px solid rgb(246, 238, 238, 0.6);
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .question{
+    font-family: "DM Sans", sans-serif;
+    color: rgba(255, 255, 255,0.7);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 34px 0;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color:white;
+    gap:63px;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer-items a{
+    font-family: "DM Sans", sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-size: 14px;
+}
